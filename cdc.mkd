@@ -1,0 +1,91 @@
+# 🛠️ Guide d'Assemblage du Robot VROOMBA
+
+## 📦 Composants Nécessaires
+
+### 🔹 Châssis (Base du robot)
+- Châssis 4 roues motrices (ex: Dagu Wild Thumper ou DIY en aluminium, A DEFINIR)
+- 4 moteurs DC avec encodeurs
+- Fixations et visserie
+
+### 🔹 Contrôleur Principal
+- **Option 1 :** Raspberry Pi 4 / 5 + Microcontrôleur (ESP32 ou Arduino A DEFINIR)
+- **Option 2 :** NVIDIA Jetson Nano (pour IA avancée)
+
+### 🔹 Contrôle des Moteurs
+- **Driver moteur :** L298N ou TB6612FNG
+- **Option avancée :** RoboClaw 2x15A
+
+### 🔹 Bras Articulé
+- Kit 4 à 6 DOF (Dobot Magician, MeArm ou DIY avec servos MG996R)
+
+### 🔹 Alimentation
+- Batterie LiPo 12V ou 24V
+- **BMS (Battery Management System)** pour protéger la batterie
+- Module DC-DC pour réguler la tension
+
+### 🔹 Capteurs Additionnels
+- **LiDAR 360°** (RPLiDAR A1 ou A2)
+- **IMU** (MPU6050 ou BNO055) pour la stabilisation
+- **Caméra de profondeur** (Intel RealSense D435)
+
+---
+
+## 🔧 Étapes d'Assemblage
+
+### **1️⃣ Installation du Châssis**
+✅ Fixer les 4 moteurs DC sur le châssis avec les supports fournis.
+✅ Connecter les roues aux axes des moteurs.
+✅ Vérifier la stabilité du châssis.
+
+### **2️⃣ Montage du Contrôleur Principal**
+✅ Installer le Raspberry Pi (ou Jetson Nano) sur une plaque support.
+✅ Fixer le microcontrôleur (ESP32 ou Arduino) sur le châssis.
+✅ Connecter le Raspberry Pi à l’ESP32 via UART ou I2C.
+
+### **3️⃣ Connexion des Moteurs et Contrôle**
+✅ Brancher les moteurs aux drivers (L298N ou TB6612FNG).
+✅ Connecter les drivers au Raspberry Pi ou ESP32.
+✅ Tester le fonctionnement avec un script Python simple.
+
+### **4️⃣ Installation du Bras Articulé**
+✅ Fixer le bras robotisé sur le châssis avec des vis.
+✅ Relier les servomoteurs à un contrôleur PWM (ex: PCA9685).
+✅ Vérifier les mouvements de base.
+
+### **5️⃣ Intégration des Capteurs**
+✅ Fixer le LiDAR sur une position stratégique (centre du châssis).
+✅ Monter l’IMU et la caméra de profondeur.
+✅ Connecter les capteurs au Raspberry Pi via I2C ou USB.
+
+### **6️⃣ Système d'Alimentation**
+✅ Installer la batterie LiPo et le module DC-DC.
+✅ Vérifier les connexions pour éviter les courts-circuits.
+✅ Tester l’alimentation des composants.
+
+---
+
+## 🔌 Schéma des Connexions Électriques
+```plaintext
+Moteurs DC  --> Driver moteur  --> Raspberry Pi / ESP32
+LiDAR       --> Raspberry Pi (USB/UART)
+IMU         --> Raspberry Pi (I2C)
+Caméra      --> Raspberry Pi (USB)
+Bras Servo  --> Contrôleur PWM --> Raspberry Pi (I2C)
+Alimentation--> Batterie LiPo  --> Régulateur DC-DC --> Raspberry Pi
+```
+
+---
+
+## 🎯 Tests et Vérifications
+1. **Test des moteurs** : Vérifier le déplacement du châssis.
+2. **Test du bras articulé** : Assurer la fluidité des mouvements.
+3. **Test des capteurs** : Récupérer des données et vérifier leur précision.
+4. **Test de communication** : Assurer la connexion entre Raspberry Pi et ESP32.
+5. **Autonomie** : Vérifier la consommation énergétique du système.
+
+---
+
+## 🚀 Prochaine Étape : Développement Logiciel
+- Installation de ROS2
+- Configuration de la navigation autonome
+- Test du mapping avec Open3D et OpenXR (Meta Quest 3)
