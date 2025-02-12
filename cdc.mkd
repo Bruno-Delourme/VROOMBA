@@ -38,29 +38,29 @@
 ✅ Vérifier la stabilité du châssis.
 
 ### **2️⃣ Montage du Contrôleur Principal**
-✅ Installer le Raspberry Pi (ou Jetson Nano) sur une plaque support.
-✅ Fixer le microcontrôleur (ESP32 ou Arduino) sur le châssis.
-✅ Connecter le Raspberry Pi à l’ESP32 via UART ou I2C.
+- ✅ Installer le Raspberry Pi (ou Jetson Nano) sur une plaque support.
+- ✅ Fixer le microcontrôleur (ESP32 ou Arduino) sur le châssis.
+- ✅ Connecter le Raspberry Pi à l’ESP32 via UART ou I2C.
 
 ### **3️⃣ Connexion des Moteurs et Contrôle**
-✅ Brancher les moteurs aux drivers (L298N ou TB6612FNG).
-✅ Connecter les drivers au Raspberry Pi ou ESP32.
-✅ Tester le fonctionnement avec un script Python simple.
+- ✅ Brancher les moteurs aux drivers (L298N ou TB6612FNG).
+- ✅ Connecter les drivers au Raspberry Pi ou ESP32.
+- ✅ Tester le fonctionnement avec un script Python simple.
 
 ### **4️⃣ Installation du Bras Articulé**
-✅ Fixer le bras robotisé sur le châssis avec des vis.
-✅ Relier les servomoteurs à un contrôleur PWM (ex: PCA9685).
-✅ Vérifier les mouvements de base.
+- ✅ Fixer le bras robotisé sur le châssis avec des vis.
+- ✅ Relier les servomoteurs à un contrôleur PWM (ex: PCA9685).
+- ✅ Vérifier les mouvements de base.
 
 ### **5️⃣ Intégration des Capteurs**
-✅ Fixer le LiDAR sur une position stratégique (centre du châssis).
-✅ Monter l’IMU et la caméra de profondeur.
-✅ Connecter les capteurs au Raspberry Pi via I2C ou USB.
+- ✅ Fixer le LiDAR sur une position stratégique (centre du châssis).
+- ✅ Monter l’IMU et la caméra de profondeur.
+- ✅ Connecter les capteurs au Raspberry Pi via I2C ou USB.
 
 ### **6️⃣ Système d'Alimentation**
-✅ Installer la batterie LiPo et le module DC-DC.
-✅ Vérifier les connexions pour éviter les courts-circuits.
-✅ Tester l’alimentation des composants.
+- ✅ Installer la batterie LiPo et le module DC-DC.
+- ✅ Vérifier les connexions pour éviter les courts-circuits.
+- ✅ Tester l’alimentation des composants.
 
 ---
 
