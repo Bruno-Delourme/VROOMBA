@@ -1,6 +1,6 @@
-# 🛠️ Guide d'Assemblage du Robot VROOMBA
+#  Guide d'Assemblage du Robot VROOMBA
 
-## 📦 Composants Nécessaires
+##  Composants Nécessaires
 
 ### 🔹 Châssis (Base du robot)
 - Châssis 4 roues motrices (ex: Dagu Wild Thumper ou DIY en aluminium, A DEFINIR)
@@ -30,12 +30,12 @@
 
 ---
 
-## 🔧 Étapes d'Assemblage
+##  Étapes d'Assemblage
 
 ### **1️⃣ Installation du Châssis**
-✅ Fixer les 4 moteurs DC sur le châssis avec les supports fournis.
-✅ Connecter les roues aux axes des moteurs.
-✅ Vérifier la stabilité du châssis.
+- ✅ Fixer les 4 moteurs DC sur le châssis avec les supports fournis.
+- ✅ Connecter les roues aux axes des moteurs.
+- ✅ Vérifier la stabilité du châssis.
 
 ### **2️⃣ Montage du Contrôleur Principal**
 - ✅ Installer le Raspberry Pi (ou Jetson Nano) sur une plaque support.
@@ -64,7 +64,7 @@
 
 ---
 
-## 🔌 Schéma des Connexions Électriques
+##  Schéma des Connexions Électriques
 ```plaintext
 Moteurs DC  --> Driver moteur  --> Raspberry Pi / ESP32
 LiDAR       --> Raspberry Pi (USB/UART)
@@ -76,7 +76,7 @@ Alimentation--> Batterie LiPo  --> Régulateur DC-DC --> Raspberry Pi
 
 ---
 
-## 🎯 Tests et Vérifications
+##  Tests et Vérifications
 1. **Test des moteurs** : Vérifier le déplacement du châssis.
 2. **Test du bras articulé** : Assurer la fluidité des mouvements.
 3. **Test des capteurs** : Récupérer des données et vérifier leur précision.
@@ -85,7 +85,7 @@ Alimentation--> Batterie LiPo  --> Régulateur DC-DC --> Raspberry Pi
 
 ---
 
-## 🚀 Prochaine Étape : Développement Logiciel
+##  Prochaine Étape : Développement Logiciel
 - Installation de ROS2
 - Configuration de la navigation autonome
 - Test du mapping avec Open3D et OpenXR (Meta Quest 3)
