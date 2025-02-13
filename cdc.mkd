@@ -28,7 +28,6 @@
 - **IMU** (MPU6050 ou BNO055) pour la stabilisation
 - **Caméra de profondeur** (Intel RealSense D435)
 
----
 
 ##  Étapes d'Assemblage
 
